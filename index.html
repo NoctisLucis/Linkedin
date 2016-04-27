@@ -9,23 +9,33 @@
     <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" >
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script language="javascript" src="libs/css/angular.min.js"></script>
+   
+    <script src="libs/css/angular.js" language="javascript" ></script>
 </head>
 
 <body class ="w3-container w3-blue-grey">    
     <div class="container_12"5>
-    <div class="w3-teal" >
-        <div class="container_12" style="background-image:url(libs/images/ffxv.jpg); background-size: 100% 320px; height: 320px; width: 960px;">
+    <div class="w3-teal" ng-app="myapp">
+        <div class="container_12" style="background-image:url(libs/images/ffxiii.png); background-size: 100% 350px; height: 350px; width: 960px;">
             <div class="w3-card-12"  >
-                <img id="Avatar" src="libs/images/avatar.jpg" alt="Avatar" class="w3-left w3-margin-right w3-margin" style="height:250px;width:250px"/>
+                <img id="Avatar" src="libs/images/avatar.jpg" alt="Avatar" class="w3-left w3-margin-right w3-margin" style="height:300px;width:300px"/>
             </div>
-            <div>
-                <h1 id="name"><strong>Nguyễn Đình Chung</strong></h1>
-                <h2 id="headline">Student at University of Science</h2>
-                <p id ="nation">Viet Nam</p>
-                <p id ="major">Information Technology</p>
-                <p id="email">Email: <em>noctislucispro@gmail.com</em></p>
-                <a class="w3-btn w3-round-xxlarge w3-white w3-text-teal " href="https://www.facebook.com/NoctisLucis.ChungNguyen"> Follow Me!</a>
+            <div id="thongTin" ng-controller="HeaderController"> 
+                <blockquote>
+                  <h1 id="name"><strong>{{data.name}}</strong></h1>
+                  <blockquote>
+                    <h2 id="headline">{{data.headline}}</h2>
+                  </blockquote>
+                  <p id="nation">{{data.nation}}</p>
+                  <p id="job">{{data.job}}</p>
+                  <p id="email">Email: <em>{{data.email}}</em></p>
+                  <p><a class="w3-btn w3-round-xxlarge w3-white w3-text-teal " href="{{data.facebook}}"> Follow Me!</a>
+                  </p>
+                </blockquote>
             </div>
+             	
+     		
         </div>
         
 		<div class="w3-white">
