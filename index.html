@@ -17,16 +17,14 @@
 <body class ="w3-container w3-blue-grey">    
     <div class="container_12"5>
     <div class="w3-teal" ng-app="myapp">
-        <div class="container_12" style="background-image:url(libs/images/ffxiii.png); background-size: 100% 350px; height: 350px; width: 960px;">
+        <div class="container_12" style="background-image:url(libs/images/ffxiii.png); background-size: 100% 330px; height: 330px; width: 960px;">
             <div class="w3-card-12"  >
-                <img id="Avatar" src="libs/images/avatar.jpg" alt="Avatar" class="w3-left w3-margin-right w3-margin" style="height:300px;width:300px"/>
+                <img id="Avatar" src="libs/images/avatar.jpg" alt="Avatar" class="w3-left w3-margin-right w3-margin" style="height:260px;width:260px"/>
             </div>
             <div id="thongTin" ng-controller="HeaderController"> 
                 <blockquote>
                   <h1 id="name"><strong>{{data.name}}</strong></h1>
-                  <blockquote>
-                    <h2 id="headline">{{data.headline}}</h2>
-                  </blockquote>
+                  <h2 id="headline">{{data.headline}}</h2>
                   <p id="nation">{{data.nation}}</p>
                   <p id="job">{{data.job}}</p>
                   <p id="email">Email: <em>{{data.email}}</em></p>
