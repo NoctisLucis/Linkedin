@@ -1,12 +1,19 @@
-// JavaScript Document
+function myInfor(arr)
+{
+	angular.module("myapp", []).controller("HeaderController", function($scope) {
+	$scope.data = arr[0];	
+	});
+}
+var textarea = document.querySelector('textarea');
 
-angular.module("myapp", []).controller("HeaderController", function($scope) {
-$scope.data = {
-	name : 'Nguyễn Ðình Chung',
-	headline: 'Stundent at University of Science',
-	nation: 'Việt Nam',
-	job: 'Infomation Technology',
-	email: 'noctislucispro@gmail.com',
-	facebook: 'https://www.facebook.com/NoctisLucis.ChungNguyen',
-	};
-});
+textarea.addEventListener('keydown', autosize);
+             
+function autosize(){
+  var el = this;
+  setTimeout(function(){
+    el.style.cssText = 'height:auto; padding:0';
+    // for box-sizing other than "content-box" use:
+    // el.style.cssText = '-moz-box-sizing:content-box';
+    el.style.cssText = 'height:' + el.scrollHeight + 'px';
+  },0);
+}

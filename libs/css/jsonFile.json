@@ -1,4 +1,4 @@
-[
+myInfor([
 {
 	"name": "Nguyễn Đình Chung",
 	"headline": "Stundent at University of Science",
@@ -6,5 +6,11 @@
 	"job": "Infomation Technology",
 	"email": "noctislucispro@gmail.com",
 	"facebook": "https://www.facebook.com/NoctisLucis.ChungNguyen",
+	"Summary": "Seeking a position to utilize my skills and abilities in the Information Technology Industry that offers Professional growth while being resourceful, innovative and flexible.",
+	"Experience": "None. \nI have no work experience before but I am fully enthusiastic of starting a new job as I am well-repaired to learn last-updated technologies.",
+	"Project": "None",
+	"Skills": "Object Oriented Programming\nData Structures and Algorithms\nDatabase - SQL Serve \nC/C++ \nJava \nTeam Work \nDesign Patterns"	,
+	"Education": "Ho Chi Minh University of Science - Software Engineering, Undergraduate.\nMy Thoi High School",
 }
 ]
+)
